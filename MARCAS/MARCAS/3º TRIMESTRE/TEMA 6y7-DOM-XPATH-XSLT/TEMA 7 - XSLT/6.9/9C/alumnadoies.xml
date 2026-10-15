@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="alumnadoies_d.xsl" type="text/xsl"?>
+<!DOCTYPE ies>
+
+<ies> 
+    <instituto>IES Oretania</instituto> 
+    <web>http://www.iesoretania.es</web> 
+
+	<!-- CICLOS DE LA FAMILIA DE INFORMÁTICA -->
+    <ciclos> 
+        <ciclo id="ASIR"> 
+            <nombre>Administración de Sistemas Informáticos en Red</nombre> 
+            <grado>Superior</grado> 
+            <decretoTitulo anyo="2009" /> 
+        </ciclo> 
+        <ciclo id="DAM"> 
+            <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre> 
+            <grado>Superior</grado> 
+            <decretoTitulo anyo="2010" /> 
+        </ciclo> 
+        <ciclo id="DAW"> 
+            <nombre>Desarrollo de Aplicaciones Web</nombre> 
+            <grado>Superior</grado> 
+            <decretoTitulo anyo="2010" /> 
+        </ciclo> 
+        <ciclo id="SMR"> 
+            <nombre>Sistemas Microinformáticos y Redes</nombre> 
+            <grado>Medio</grado> 
+            <decretoTitulo anyo="2008" /> 
+        </ciclo> 
+    </ciclos> 
+
+	<!-- MODULOS DE LOS CICLOS DE INFORMÁTICA -->
+	<modulos>
+		<modulo id="0225">
+		  <nombre>Redes Locales</nombre>
+		  <curso>1</curso>
+		  <horasSemanales>7</horasSemanales>
+		  <ciclo>SMR</ciclo>
+		</modulo>
+		<modulo id="0226">
+		  <nombre>Seguridad informática</nombre>
+		  <curso>2</curso>
+		  <horasSemanales>5</horasSemanales>
+		  <ciclo>SMR</ciclo>
+		</modulo>
+		<modulo id="0228">
+		  <nombre>Aplicaciones web</nombre>
+		  <curso>2</curso>
+		  <horasSemanales>4</horasSemanales>
+		  <ciclo>SMR</ciclo>
+		</modulo>
+		<modulo id="0372">
+		  <nombre>Gestión de bases de datos</nombre>
+		  <curso>1</curso>
+		  <horasSemanales>5</horasSemanales>
+		  <ciclo>ASIR</ciclo>
+		</modulo>
+		<modulo id="0373">
+		  <nombre>Lenguajes de marcas y sistemas de gestión de información</nombre>
+		  <curso>1</curso>
+		  <horasSemanales>3</horasSemanales>
+		  <ciclo>ASIR</ciclo>
+		  <ciclo>DAM</ciclo>
+		  <ciclo>DAW</ciclo>
+		</modulo>
+		<modulo id="0376">
+		  <nombre>Implantación de aplicaciones web</nombre>
+		  <curso>2</curso>
+		  <horasSemanales>5</horasSemanales>
+		  <ciclo>ASIR</ciclo>
+		</modulo>
+		<modulo id="0483">
+		  <nombre>Sistemas informáticos</nombre>
+		  <curso>1</curso>
+		  <horasSemanales>5</horasSemanales>
+		  <ciclo>DAM</ciclo>
+		  <ciclo>DAW</ciclo>
+		</modulo>
+		<modulo id="0487">
+		  <nombre>Entornos de desarrollo</nombre>
+		  <curso>1</curso>
+		  <horasSemanales>3</horasSemanales>
+		  <ciclo>DAM</ciclo>
+		  <ciclo>DAW</ciclo>
+		</modulo>
+		<modulo id="0488">
+		  <nombre>Desarrollo de interfaces</nombre>
+		  <curso>2</curso>
+		  <horasSemanales>4</horasSemanales>
+		  <ciclo>DAM</ciclo>
+		</modulo>
+		<modulo id="0613">
+		  <nombre>Desarrollo web en entorno servidor</nombre>
+		  <curso>2</curso>
+		  <horasSemanales>9</horasSemanales>
+		  <ciclo>DAW</ciclo>
+		</modulo>
+		<modulo id="0614">
+		  <nombre>Despliegue de aplicaciones web</nombre>
+		  <curso>2</curso>
+		  <horasSemanales>3</horasSemanales>
+		  <ciclo>DAW</ciclo>
+		</modulo>
+  </modulos>
+  
+<!-- ALUMNOS -->
+
+    <alumnos>
+
+        <alumno id="e01">
+            <apellido1>Rivas</apellido1>
+            <apellido2>Santos</apellido2>
+            <nombre>Víctor Manuel</nombre>
+            <sexo>Hombre</sexo>
+			<edad>32</edad>
+            <estudios>
+                <ciclo codigo="DAW"/>
+                <modulos>
+                    <modulo codigo="0373"/>
+                    <modulo codigo="0483"/>
+                    <modulo codigo="0614"/>
+                </modulos>
+            </estudios>
+        </alumno>
+
+        <alumno id="e02">
+            <apellido1>Pérez</apellido1>
+            <apellido2>García</apellido2>
+            <nombre>Luisa</nombre>
+            <sexo>Mujer</sexo>
+			<edad>33</edad>
+            <estudios>
+                <ciclo codigo="DAW"/>
+                <modulos>
+                    <modulo codigo="0373"/>
+                    <modulo codigo="0483"/>
+                </modulos>
+            </estudios>
+
+        </alumno>
+
+        <alumno id="e03" beca="si">
+            <apellido1>Pérez</apellido1>
+            <apellido2>Romero</apellido2>
+            <nombre>Fernando</nombre>
+            <sexo>Hombre</sexo>
+			<edad>25</edad>
+            <estudios>
+                <ciclo codigo="DAM"/>
+                <modulos>
+                    <modulo codigo="0373"/>
+                    <modulo codigo="0483"/>					
+                    <modulo codigo="0488"/>
+                    <modulo codigo="0487"/>
+                </modulos>
+            </estudios>
+        </alumno>
+
+        <alumno id="e04">
+            <apellido1>Avalón</apellido1>
+            <apellido2>Jiménez</apellido2>
+            <nombre>Marí­a</nombre>
+            <sexo>Mujer</sexo>
+			<edad>25</edad>
+            <estudios>
+                <ciclo codigo="ASIR"/>
+                <modulos>
+                    <modulo codigo="0373"/>
+                    <modulo codigo="0372"/>
+                </modulos>
+            </estudios>
+        </alumno>
+		
+		<alumno id="e05">
+            <apellido1>González</apellido1>
+            <apellido2>Fernádez</apellido2>
+            <nombre>Elena</nombre>
+            <sexo>Mujer</sexo>
+			<edad>20</edad>
+            <estudios>
+                <ciclo codigo="SMR"/>
+                <modulos>
+                    <modulo codigo="0228"/>
+                    <modulo codigo="0226"/>
+                    <modulo codigo="0225"/>
+                </modulos>
+            </estudios>
+        </alumno>
+		
+		<alumno id="e06">
+            <apellido1>Ruíz</apellido1>
+            <apellido2>Gómez</apellido2>
+            <nombre>Manuel</nombre>
+            <sexo>Hombre</sexo>
+			<edad>42</edad>
+            <estudios>
+                <ciclo codigo="ASIR"/>
+                <modulos>
+                    <modulo codigo="0373"/>
+                    <modulo codigo="0372"/>
+                    <modulo codigo="0376"/>
+                </modulos>
+            </estudios>
+        </alumno>
+
+		<alumno id="e07">
+            <apellido1>Gómez</apellido1>
+            <apellido2>Martínez</apellido2>
+            <nombre>Carlos</nombre>
+            <sexo>Hombre</sexo>
+			<edad>37</edad>
+            <estudios>
+                <ciclo codigo="DAW"/>
+                <modulos>
+                    <modulo codigo="0613"/>
+                    <modulo codigo="0614"/>
+                </modulos>
+                <proyecto>Central de reservas restaurante</proyecto>
+				<fct>La Primera</fct>
+            </estudios>
+        </alumno>
+		
+		<alumno id="e08">
+            <apellido1>García</apellido1>
+            <apellido2>Martín</apellido2>
+            <nombre>Andrea</nombre>
+            <sexo>Mujer</sexo>
+			<edad>18</edad>
+            <estudios>
+                <ciclo codigo="SMR"/>
+                <modulos>
+                    <modulo codigo="0228"/>
+                    <modulo codigo="0226"/>
+                </modulos>
+				<fct>Sicnova</fct>
+            </estudios>
+        </alumno>		
+		
+    </alumnos>
+</ies>

@@ -1,0 +1,360 @@
+algoritmo par_impar
+	#definir tipo de datos
+	DEFINIR num Como Entero
+	
+	#leer los datos por teclado
+	ESCRIBIR "Escribe un numero entero: "
+	LEER num
+	
+	#proceso, condicion simple e imprimir resultado
+	SI num MOD 2 == 0 ENTONCES
+		ESCRIBIR "El número es par."
+	SINO
+		ESCRIBIR "El número es impar."
+	FINSI
+	
+FinAlgoritmo
+........................
+VERSION 2
+algoritmo par_impar
+	#definir tipo de datos
+	DEFINIR num Como Entero
+	
+	#leer los datos por teclado
+	ESCRIBIR "Escribe un numero entero: "
+	LEER num
+	
+	#proceso, condicion simple e imprimir resultado
+	SI num MOD 2 == 0 ENTONCES
+		ESCRIBIR "El número es par."
+	SI num MOD 2 != 0 ENTONCES
+		ESCRIBIR "El número es impar."
+	FINSI
+	
+FinAlgoritmo
+
+---------------------
+algoritmo recuperacion
+	#definir tipo de datos
+	DEFINIR nota1, nota2, nota3 Como Real
+	
+	#leer los datos por teclado
+	ESCRIBIR "Escribe la calificación del tema 1: "
+	LEER nota1
+	
+	ESCRIBIR "Escribe la calificación del tema 2: "
+	LEER nota2
+	
+	ESCRIBIR "Escribe la calificación del tema 3: "
+	LEER nota3
+	
+	#proceso, condicion simple e imprimir resultado
+	SI nota1<5 ENTONCES
+		ESCRIBIR "Tienes que recuperar el primer tema."
+	FINSI	
+	SI nota2<5 ENTONCES
+		ESCRIBIR "Tienes que recuperar el segundo tema."
+	FINSI	
+	SI nota3<5 ENTONCES
+		ESCRIBIR "Tienes que recuperar el tercer tema."
+	FINSI
+FinAlgoritmo
+
+........................
+VERSION 2
+
+
+-----------------------------------------------------	
+FUNCION valorAbsoluto = valorAbsoluto (num)
+	#definir tipo de datos
+	DEFINIR num Como Real
+	
+	#proceso
+	SI num<0 ENTONCES
+	num=-num
+	FINSI
+	
+FinFuncion
+
+algoritmo siempre_positivo
+	#definir tipo de datos
+	DEFINIR num Como Real
+	
+	#leer los datos por teclado
+	ESCRIBIR "Escribe un numero: "
+	LEER num
+	
+	#llamada a funcion e imprimir resultado
+	ESCRIBIR valorAbsoluto(num)
+FinAlgoritmo
+---------------------------------------------
+Funcion energiaTotal= energiaTotal(potenciaMedia)
+	#definir tipo de datos
+	DEFINIR potenciaMedia, potenciaTotal Como Real
+	
+	#proceso
+	potenciaTotal = (potenciaMedia * 24) / 1000
+	
+FinFuncion
+
+algoritmo consumo
+	#definir tipo de datos
+	DEFINIR potenciaMedia, potenciaTotal Como Real
+	
+	#leer datos por teclado
+	ESCRIBIR "Dime la potencia media en W: "
+	LEER potenciaMedia
+	
+	#proceso,llamada a funcion
+	ESCRIBIR "El consumo de su energia en 24 horas es de ", potenciaTotal
+	
+	SI potenciaTotal >= 72 ENTONCES
+	ESCRIBIR "¡CUIDADO! Detectado un consumo elevado."
+	FINSI
+FinAlgoritmo
+	
+-------------------------------------------------------
+Algoritmo bolos
+#definir tipo de datos
+	DEFINIR,tirada1,tirada2,tirada3,tirada4,puntuacion Como Entero	
+	
+#leer datos por teclado
+	ESCRIBIR "Dime los bolos que has tirado en la primera tirada del primer turno: "
+	LEER tirada1
+	ESCRIBIR "Dime los bolos que has tirado en la segunda tirada del primer turno: "
+	LEER tirada2
+	ESCRIBIR "Dime los bolos que has tirado en la primera tirada del segundo turno: "
+	LEER tirada3
+	ESCRIBIR "Dime los bolos que has tirado en la segunda tirada del segundo turno: "
+	LEER tirada4
+	
+#Declarar variables
+
+puntuacion = 0
+
+#proceso
+	tirada1
+	SI (tirada1 == 10) ENTONCES
+		ESCRIBIR "Has hecho un pleno!!"
+		puntuacion = 10 + ((tirada3+tirada4) * 2)	
+	FINSI
+	SI ((tirada1 != 10) && (tirada1 + tirada2 == 10)) ENTONCES
+		ESCRIBIR "Has hecho un semipleno!!"
+		puntuacion = 10 + ((tirada3 * 2) + tirada4)
+	FINSI
+	SI (tirada1 + tirada2 != 10) ENTONCES
+		puntuacion = tirada1 + tirada2 + tirada3 + tirada4
+	FINSI
+	
+#imprimir resultado
+	ESCRIBIR "La puntuación total es igual a %d puntos." , puntuacion
+	
+FinAlgoritmo
+
+----------------------------------------------------
+algoritmo SMS
+#definir tipo de datos
+	DEFINIR texto Como Cadena
+	DEFINIR precioFijo, IVA, precioAñadido, precioTotal Como Real
+	
+#leer datos por teclado
+	ESCRIBIR "Escribe el texto a mandar: "
+	LEER texto
+
+#Declarar variables
+		precioFijo=0.75
+		precioAñadido=0.25
+		IVA=1.21
+		
+#proceso y condicional	
+	SI Longitud(texto) > 80 ENTONCES
+		precioTotal = (precioFijo+precioAñadido)*IVA
+	FINSI
+	SI Longitud(texto) < 80 ENTONCES
+		precioTotal = precioFijo*IVA
+	FINSI 
+	
+#imprimir resultado
+	ESCRIBIR "Tienes que pagar %.2f euros por tu mensaje." , precioTotal
+	
+FinAlgoritmo
+
+-----------------------------------------------------------------
+Algoritmo cuantosAniosTiene
+#definir tipo de datos
+	DEFINIR DA, MA, AA, DN, MN, AN, edad Como Entero
+	
+#leer datos por teclado
+	ESCRIBIR "Dime cuando naciste y te dire cuantos años tienes. Primero el dia que naciste: "
+	LEER DN
+	ESCRIBIR "Segundo el mes: "
+	LEER MN
+	ESCRIBIR "Tercero el año: "
+	LEER AN
+	
+		
+#proceso y condicional	
+	edad = AA - AN
+	SI ((MN > MA) OR ((MN == MA) AND (DN > DA))  ENTONCES
+		edad = edad - 1
+	FINSI 
+	
+#imprimir resultado
+	ESCRIBIR "Tienes " + edad + " años."
+	
+FinAlgoritmo
+
+-------------------------------------------------------
+algoritmo ordenando
+#definir tipo de datos
+	DEFINIR num1, num2 Como Entero
+	
+#leer datos por teclado
+	ESCRIBIR "Dime el primer numero entero: "
+	LEER num1
+	ESCRIBIR "Dime el segundo numero entero: "
+	LEER num2
+	
+#proceso, condicional e imprimir resultado	
+	
+	SI num1>=num2 ENTONCES
+		ESCRIBIR num1 + "\n" + num2
+	FINSI
+	SINO SI num1<num2 ENTONCES
+		ESCRIBIR num2 + "\n" + num1
+	FINSI
+	SINO 
+		ESCRIBIR num1 + "\n" + num2
+	FINSI
+	
+FinAlgoritmo
+
+---------------------------------------
+algoritmo sacar_dinero
+#definir tipo de datos
+	DEFINIR sacarDinero, saldo, saldoRestante Como Real
+
+#Declarar variables
+	saldo = 500	
+
+#leer datos por teclado
+	ESCRIBIR "Tu saldo disponible es de %.2f €.",saldo
+	ESCRIBIR "Dime la cantidad de dinero que quieres retirar: "
+	LEER sacarDinero
+
+#proceso, condicional e imprimir resultado	
+	
+	SI saldo<sacarDinero ENTONCES
+		ESCRIBIR "Cantidad no valida. Tu saldo es de %.2f €.",saldo
+	FINSI
+	SINO 
+		saldoRestante = saldo - sacarDinero
+		ESCRIBIR "Tu saldo restante es de %.2f €",saldoRestante
+	FINSI
+	
+FinAlgoritmo
+----------------------------------------------------
+Algoritmo tresCifras
+#definir tipo de datos
+	DEFINIR num, unidades, centenas Como Entero
+
+#Declarar variables
+	unidades = num MOD 10
+	centenas = num DIV 100
+
+#leer datos por teclado
+	ESCRIBIR "Dime un número de tres cifras(relleno con 0 a la izquierda si es un número de menos de 3 unidades: "
+	LEER num
+
+#proceso, condicional e imprimir resultado	
+	
+	SI num<0 AND num>999 ENTONCES
+		ESCRIBIR "Número no válido."
+	FINSI
+	SINO SI unidades == centenas ENTONCES
+		ESCRIBIR "Es capicua."
+		SINO
+		ESCRIBIR "No es capicua."
+	FINSI
+	
+FinAlgoritmo
+-------------------------------------------------------
+Algoritmo romanosLocos
+
+#definir tipo de datos
+	DEFINIR num,decenas, unidades Como Entero
+	
+#leer datos por teclado
+	ESCRIBIR "Dime un número del 1 al 99: "
+	LEER num
+
+#proceso, condicional e imprimir resultado	
+	
+	SI num<0 OR num>99 ENTONCES
+            ESCRIBIR "El número no es válido."
+        SINO SI num == 0 ENTONCES
+            ESCRIBIR "No existe el 0 en números romanos."
+			SINO 
+				decenas = num DIV 10
+            SI decenas == 1 ENTONCES
+                ESCRIBIR "X"
+				SINO SI decenas == 2 ENTONCES
+					ESCRIBIR "XX"
+					SINO SI decenas == 3 ENTONCES
+						ESCRIBIR "XXX"
+						SINO SI decenas == 4 ENTONCES
+							ESCRIBIR "XL"
+							SINO SI decenas == 5 ENTONCES
+								ESCRIBIR "L"
+								SINO SI decenas == 6 ENTONCES
+									ESCRIBIR "LX"
+									SINO SI decenas == 7 ENTONCES
+										ESCRIBIR "LXX"
+										SINO SI decenas == 8 ENTONCES
+											ESCRIBIR "LXXX"
+											SINO SI decenas == 9 ENTONCES
+												ESCRIBIR "XC"
+											FINSI
+										FINSI
+									FINSI
+								FINSI
+							FINSI
+						FINSI
+					FINSI
+				FINSI
+			FINSI
+        FINSI
+	FINSI	
+	
+	unidades = num MOD 10
+    SI unidades == 1 ENTONCES
+        ESCRIBIR "I"
+		SINO SI unidades == 2 ENTONCES
+			ESCRIBIR "II"
+			SINO SI unidades == 3 ENTONCES
+				ESCRIBIR "III"
+				SINO SI unidades == 4 ENTONCES
+					ESCRIBIR "IV"
+					SINO SI unidades == 5 ENTONCES
+						ESCRIBIR "V"
+						SINO SI unidades == 6 ENTONCES
+							ESCRIBIR "VI"
+								SINO SI unidades == 7 ENTONCES
+									ESCRIBIR "VII"
+									SINO SI unidades == 8 ENTONCES
+										ESCRIBIR "VIII"
+										SINO SI unidades == 9 ENTONCES
+											ESCRIBIR "IX"
+										FINSI
+									FINSI
+								FINSI
+							FINSI
+						FINSI
+					FINSI
+				FINSI
+			FINSI
+        FINSI
+	FINSI				
+	
+FinAlgoritmo
+----------------------------------------

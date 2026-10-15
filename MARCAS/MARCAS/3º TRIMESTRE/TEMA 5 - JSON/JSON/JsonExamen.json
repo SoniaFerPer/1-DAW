@@ -1,0 +1,68 @@
+{
+    "Academia":[
+        {
+            "datos_empresa":{
+                "nombre":"FormateOnline S.L.",
+                "CIF":"P2305000H",
+                "Direccion":{
+                        "calle":{
+                            "nombreCalle":"La cruz",
+                            "numero":15
+                        },
+                        "Poblacion":{
+                            "nombrePoblacion":"Linares",
+                            "CP":23700
+                        },
+                        "Provincia":"Jaen"
+                },
+                "telefonos":{"telefono":[666999888,666555444]}
+            },
+            "Datos_cursos":[
+                {
+                "curso":[
+                        {
+                        "codigo_curso":"C_987",
+                        "Titulo":"Ciberseguridad en sistemas distribuidos",
+                        "Nivel":"Basico",
+                        "dias_clase":
+                            {"dia":["Lunes","Miercoles","Viernes"]},
+                        "NumeroAlumnos":15,
+                        "fechaInicio":"12-Marzo-2025",
+                        "Profesores":[
+                            {
+                                "Turno":"Mañana",
+                                "Nombre":"Agustin Parras Lozano",
+                                "telefono":666777888,
+                                "Email":"aparras@formateonline.es"
+                            },
+                            {
+                                "Turno":"Tarde",
+                                "Nombre":"Ana Perez Garcia",
+                                "telefono":666111222,
+                                "Email":"aperez@formateonline.es"
+                            }    
+                        ]    
+                        },
+                        {                
+                        "codigo_curso":"C_125",
+                        "Titulo":"Inteligencia Artificial y Big Data",
+                        "Nivel":"Intermedio",
+                        "dias_clase":
+                            {"dia":["Martes","Jueves"]},
+                        "NumeroAlumnos":10,
+                        "fechaInicio":"7-abril-2025",
+                        "Profesores":{
+                            "Turno":"Mañana",
+                            "Nombre":"Angela Lopez Garcia",
+                            "telefono":666333888,
+                            "Email":"alopez@formateonline.es"
+                            }             
+                        }
+                    ]
+                }
+            ]
+
+        }    
+
+    ]                           
+}

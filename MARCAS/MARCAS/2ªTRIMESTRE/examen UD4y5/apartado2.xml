@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listacursos[
+<!ELEMENT listacursos (curso)+>
+<!ELEMENT curso (alumno)+>
+<!ATTLIST curso num (1 | 2) #IMPLIED
+                nombre CDATA #REQUIRED> 
+<!ELEMENT alumno (dni, nombre, ap1, ap2?, listaasignaturas)>
+<!ELEMENT listaasignaturas (asignatura+)>
+<!ELEMENT asignatura (nombre, profesor)>
+  <!ATTLIST asignatura codigo CDATA #REQUIRED>
+<!ELEMENT profesor (nrp, nombre, ap1, ap2?)>
+<!ELEMENT dni    (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ap1    (#PCDATA)>
+<!ELEMENT ap2    (#PCDATA)>
+<!ELEMENT nrp    (#PCDATA)>
+]>
+<listacursos>
+    <curso num="1" nombre="1ºDAW-T">
+    <alumno>
+          <dni>26000111E</dni>
+          <nombre>Juan</nombre>
+          <ap1>Sanchez</ap1>
+          <ap2></ap2>
+          <listaasignaturas>
+            <asignatura codigo="LM1">
+              <nombre>LMSGI</nombre>
+              <profesor>
+                <nrp>8</nrp>
+                <nombre>OSCAR</nombre>
+                <ap1>APORTA</ap1>
+                <ap2>LORENZO</ap2>
+              </profesor>
+            </asignatura>
+            <asignatura codigo="BD1">
+              <nombre>BD</nombre>
+              <profesor>
+                <nrp>9</nrp>
+                <nombre>ANTONIO</nombre>
+                <ap1>DIAZ</ap1>
+                <ap2></ap2>
+              </profesor>
+            </asignatura>
+          </listaasignaturas>
+    </alumno>
+   </curso> 
+   <curso num="1" nombre="1ºDAW-T">
+    <alumno>
+          <dni>2644422T</dni>
+          <nombre>Eva</nombre>
+          <ap1>Cruz</ap1>
+          <ap2>Serrano</ap2>
+          <listaasignaturas>
+            <asignatura codigo="LM1">
+              <nombre>LMSGI</nombre>
+              <profesor>
+                <nrp>8</nrp>
+                <nombre>OSCAR</nombre>
+                <ap1>APORTA</ap1>
+                <ap2>LORENZO</ap2>
+              </profesor>
+            </asignatura>
+            <asignatura codigo="BD1">
+              <nombre>BD</nombre>
+              <profesor>
+                <nrp>9</nrp>
+                <nombre>ANTONIO</nombre>
+                <ap1>DIAZ</ap1>
+                <ap2></ap2>
+              </profesor>
+            </asignatura>
+          </listaasignaturas>
+          </alumno>
+     </curso> 
+</listacursos>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Sonia Fernández"/>
+        <title>Formulario Participación Fiestas</title>
+        <meta name="description" content="Examen practico unidad 2">
+        <meta name="keywords" content="html,examen, unidad, 2 ">
+        <link rel="icon" href="./imagenes/logo+fiestas+ibero+romanas+castulo+PNG-1920w.png" type="png">
+    </head>
+    <body>
+        <h1 align="center"><a id="titulo">FIESTAS IBERO-ROMANAS DE CÁSTULO</a></h1>
+        <ul type="circle">
+            <li><a href="./index.html">INICIO</a></li>
+            <li><a href="./fiestas.html">FIESTAS</a></li>
+                <ul type="square">
+                    <li><a href="#circo">CIRCO ROMANO</a></li>
+                    <li><a href="#desfile">DESFILE DE TROPAS Y LEGIONES</a></li>
+                </ul>    
+            <li><a href="./participa.html">PARTICIPA</a></li>
+            <li><a href="./programa.html">PROGRAMA</a></li>
+        </ul>
+        <hr>
+        <h2 align="center">PARTICIPA</h2>
+        <p>Ya son cientos de personas las que participan activamente en el Desfile Oficial de Tropas y Legiones de las Fiestas Ibero Romanas de Cástulo.  Inscríbete y conviértete en un romano, íbero o cartaginés creando tu propia vestimenta, asistiendo a talleres formativos y siendo parte de las culturas de Cástulo.</p>
+        <p>Contempla el Desfile Triunfal que recorrerá durante las Fiestas de Cástulo las calles más céntricas de la ciudad de Linares. Un acontecimiento realizado con la participación de la propia población, que cada edición se siente más unida e involucrada a la celebración de estas fiestas, y la colaboración de profesionales y recreadores históricos venidos de diferentes puntos de España.</p>
+        <h4>¡¡TE ESPERAMOS!!</h4>
+        
+        <form action="registro/registro.php" method="post">
+        <h3 align="center"><i>FORMULARIO DE INSCRIPCIÓN</i></h3>
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <p>Nombre: <input type="text" name="nombre" placeholder="Tu respuesta" required="required">&#42;</p>     
+                <p>Apellidos: <input type="text" name="apellido" placeholder="Tu respuesta" required="required">&#42;</p>    
+                <p>Fecha de Nacimiento <input type="date" required="required">&#42;</p>
+                <p>Género</p>
+                <p><input type="radio" name="generos" value="valor1">Masculino<br>
+                <input type="radio" name="generos" value="valor2">Femenino<br>
+                <input type="radio" name="generos" value="valor3">Otros</p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Informacion de Contacto</legend>
+                <p>Correo Electronico: <input type="email" name="email" placeholder="Tu direccion de correo Electronico" required="required">&#42;</p>     
+                <p>Numero de telefono: <input type="tel" name="telefono" required="required">&#42;</p>  
+                <p>direccion</p> 
+                <textarea cols="50" rows="4" maxlength="300"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Marca las opciones que aceptas</legend>
+                <p><input type="checkbox"> He participado en el Desfile General de ediciones anteriores<br>
+                    <input type="checkbox"> Autorizacion para la cesion de tus datos de contacto al REPRESENTANTE de la cultura escogida para participar en el desfile<br>
+                    <input type="checkbox"> Compromiso a respetar el rigor hisotrico de la vestimenta y seguir las indicaciones de los representantes y responsable del evento.
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Marca la cultura a la que te gustaria pertenecer &#42;</legend>
+                <p>seleccionar solo una:</p>
+                <p><input type="radio"name="cultura" value="valor1">CULTURA IBERA<input type="radio"name="cultura" value="valor2">CULTURA CARTAGINESA<input type="radio"name="cultura" value="valor3">CULTURA ROMANA</p>
+                <fieldset>
+                    <legend>Escoge en que grupo quieres participar de una de las culturas</legend>
+                    
+                    <p><select name="Grupo cultura IBERA" size="6">
+                        <option value="ibera0" selected="selected">Grupo cultura IBERA</option>
+                        <option value="ibera1">IBEROS ORETANOS</option>
+                        <option value="ibera2">ARISTOCRACIA IBERA</option>
+                        <option value="ibera3">MERCENARIOS DE NETÓN</option>
+                        <option value="ibera4">SACERDOTISAS IBERAS</option>
+                    </select>
+                    <select name="Grupo cultura CARTAGINESA" size="6">
+                        <option value="cartaginesa0" selected="selected">Grupo cultura CARTAGINESA</option>
+                        <option value="cartaginesa1">MERCADERES CARTAGINENSES</option>
+                        <option value="cartaginesa2">GUARDIA DE TANIT</option>
+                        <option value="cartaginesa3">HONDEROS</option>
+                        <option value="cartaginesa4">SACERDOTISAS DE ISIS</option>
+                    </select>
+                    <select name="Grupo cultura ROMANA" size="6">
+                        <option value="romana0" selected="selected">Grupo cultura ROMANA</option>
+                        <option value="romana1">PATRICIOS</option>
+                        <option value="romana2">GUARDIA PRETORIANA</option>
+                        <option value="romana3">LA LEGION DE ESCIPION</option>
+                        <option value="romana4">SACERDOTES VESTALES</option>
+                    </select>
+                    </p>
+                </fieldset>       
+            </fieldset>
+            <p><input type="checkbox" name="terminos" required="required"> Acepto los Terminos y Condiciones</p>
+            <p><input type="submit" value="Registrarse"><input type="reset" value="Limpiar formulario"></p>
+        </form>
+        <p><a href="#titulo">Ir arriba</a></p>    
+        <p align="center"><img src="../imagenes/logo+fiestas+ibero+romanas+castulo+PNG-1920w.png" alt="Fiestas ibero romanas" width="5%"><img src="../imagenes/AYTO+LINARES+TURISMO+PNG-1920w.png" alt="Ayuntamiento de Linares"  width="5%"></p>
+        <p align="center"><b>C/ Iglesia, 5 - 23700 Linares (Jaén)</b></p>
+        <p align="center">(+34) 953 10 01 83 </p>
+        <p align="center" target="_blank"><a><b>turismo@aytolinares.es</b></a></p>
+        <p align="center" target="_blank"><a><b>twww.turismolinares.es</b></a></p>
+        
+        <h3>¡Síguenos en redes!</h3>
+        <p><a href="https://www.facebook.com/fiestascastulo" target="_blank"><img src="../imagenes/LogoFaceBook.png" alt="Facebook" width="75" height="75"></a> <a href="https://twitter.com/fiestascastulo" target="_blank"><img src="../imagenes/LogoTwiter.png" alt="Twitter" width="75" height="75"></a><a href="https://www.instagram.com/fiestascastulo" target="_blank"><img src="../imagenes/LogoInstagram.png" alt="Facebook" width="75" height="75"></a><a href="https://www.youtube.com/channel/UC2MkXI8j4-nuMJ5bxZk9-Cw" target="_blank"><img src="../imagenes/LogoYoutube.png" alt="Youtube" width="75" height="75"></a></p>    
+             
+        <p><b>ENLACES DE INTERÉS</b></p>
+        <p>Aviso Legal</p>
+        <p>Política de Privacidad</p>
+        <p>Política de Cookies</p>
+    </body>
+</html>
+        

@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+    background-color: #EDDCC1;
+}
+
+h1 {
+    font-family: 'Courier New', 'Courier', 'monospace';
+    font-size: 2em;
+    word-spacing: -5px;
+}
+
+h1 > span {
+    color: #328532;
+    font-size: 0.9em;
+}
+
+h2 {
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #616161;
+    text-align: center;
+}
+
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+header {
+    background-color: #FFF;
+   
+}
+
+h1 > span {
+    color: #328532;
+    font-size: 0.9em;
+}
+
+nav {
+    color: #000;
+
+}
+
+a.link {
+    font-weight: bold;
+}
+
+
+article>div {
+    background-color: #328532;
+    padding: 10px;
+    color: #FFF;
+    text-align: center;
+}
+
+footer {
+    background-color: #1c221c;
+    color: #FFF;
+}

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PanelDeVuelos[
+  <!ELEMENT PanelDeVuelos (aeropuerto+)>
+    <!ELEMENT aeropuerto (nombre, vuelo+,fecha)>
+      <!ELEMENT nombre (#PCDATA)>
+      <!ELEMENT vuelo ( Diario?, Origen*, Destino+, HoraSalida, HoraLlegada)>
+        <!ATTLIST vuelo Codigo ID #REQUIRED>
+        <!ELEMENT Diario EMPTY>
+          <!ATTLIST Diario Estado (SI | NO) "SI">
+        <!ELEMENT Origen (#PCDATA)>
+        <!ELEMENT Destino (#PCDATA)>
+        <!ELEMENT HoraSalida (#PCDATA)>
+        <!ELEMENT HoraLlegada (#PCDATA)>
+        <!ATTLIST vuelo Estado ( R |C | E ) "E">
+      <!ELEMENT fecha (#PCDATA)>
+  ]>
+<PanelDeVuelos>
+  <aeropuerto>
+      <nombre>Málaga</nombre>
+      <vuelo Codigo="V22" Estado="R">
+        <Diario Estado="SI"/>
+        <Origen>Málaga</Origen>
+        <Destino>Cork</Destino>
+        <HoraSalida>9:30</HoraSalida>
+        <HoraLlegada>11:30</HoraLlegada>
+      </vuelo>
+       <vuelo Codigo="V23" Estado="C">
+        <Diario Estado="SI"/>
+        <Origen>Málaga</Origen>
+        <Destino>Dublín</Destino>
+        <HoraSalida>10:15</HoraSalida>
+        <HoraLlegada>11:15</HoraLlegada>
+      </vuelo>
+       <vuelo Codigo="V24" Estado="E">
+        <Diario Estado="NO"/>
+        <Origen>Málaga</Origen>
+        <Destino>Tetuan</Destino>
+        <HoraSalida>13:20</HoraSalida>
+        <HoraLlegada>14:05</HoraLlegada>
+      </vuelo>
+      <fecha>24/12/2023</fecha>
+  </aeropuerto>  
+</PanelDeVuelos>
+  
+

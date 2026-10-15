@@ -1,0 +1,39 @@
+{
+    "empleados":[
+        {
+        "empleado":
+            {
+                "datos-personales":
+                    {
+                        "nombre":"Rosa",
+                        "apellido":"Ramirez",
+                        "fecha de nacimiento":"23-11-2020"  
+                    },
+                "detalles-laborales":
+                    {
+                        "numero":"2423543",
+                        "puesto":"Administrativo",
+                        "departamento":"Gestión"
+                    }
+            }
+
+        },
+        {
+        "empleado":
+            {
+                "datos-personales":
+                    {
+                        "nombre":"Ramiro",
+                        "apellido":"Gomez",
+                        "fecha de nacimiento":"23-11-2010"  
+                    },
+                "detalles-laborales":
+                    {
+                        "numero":"2456573",
+                        "puesto":"Informatico",
+                        "departamento":"IT"
+                    }
+            }
+        }    
+    ]    
+}

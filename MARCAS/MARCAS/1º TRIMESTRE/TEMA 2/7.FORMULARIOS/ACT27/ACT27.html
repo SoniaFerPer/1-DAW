@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Sonia Fernández"/>
+        <title>ACT27</title>
+        <meta name="description" content="Encuesta de valoración">
+        <meta name="generator" content="VSCode">
+        <meta name="keywords" content="html,ejercicio 27,encuesta">
+        <link rel="icon" href="../ACT27/imagenes/SON.png" type="png">
+    </head>
+    <body>
+        <form action="mailto:Sferper932@g.educaand.es" method="post">
+            <h1>Encuesta de valoración del 1<sup>er</sup> curso del ciclo</h1>
+            <p>Rellena el siguiente cuestionario para su estudio por el departamento de Informática y Telecomunicaciones del Instituto.</p>
+            <p>Fecha de la consulta: <input type="date" name="Fecha_consulta" ></p>
+            <fieldset>
+            <legend><b>Marca las asignaturas en las que tenías conocimientos previos</b></legend>
+            <table cellpadding="10px">
+                <tr>
+                    <td rowspan="5">
+                    <input type="checkbox" name="lenmar" value="marcas"/>Lenguaje de Marcas<br>
+                    <input type="checkbox" name="Fol" value="formacion"/>Formación y orientación laboral<br>
+                    <input type="checkbox" name="bd" value="bdatos"/>Base de datos<br>
+                    <input type="checkbox" name="hardware" value="funhar"/>Fundamentos de hardware<br>
+                    <input type="checkbox" name="so" value="impsisop"/>Implementación de sistemas operativos<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                    <input type="checkbox" name="plaadred" value="red"/>Planificación y administración de redes<br>
+                    <input type="checkbox" name="prog" value="programacion"/>Programación<br>
+                    <input type="checkbox" name="ed" value="entdes"/>Entornos de desarrollo<br>
+                    <input type="checkbox" name="sis" value="sistemas"/>Sistemas informáticos
+                    </td>
+                </tr>
+            </table>
+            </fieldset>  
+            <br>
+            <fieldset>
+                <legend><b>Establece el grado de satisfacción de los siguientes aspectos:</b></legend>
+                <table cellpadding="10px" rules="rows">
+                <tr>
+                    <th>Descripción</th>
+                    <th>Valoración (0-10)</th>
+                </tr>
+                <tr>
+                    <td>Contenido del curso</td>
+                    <td><input type="range" name="contenido"></td>
+                
+                </tr>
+                <tr>
+                    <td>Material didáctico proporcionado</td>
+                    <td><input type="range" name="material"></td>
+                </tr>
+                <tr>
+                    <td>Adecuación de las prácticas</td>
+                    <td><input type="range" name="practicas"></td>
+                </tr>
+                <tr>
+                   <td>Calidad de las exposiciones en clase</td> 
+                   <td><input type="range" name="exposicion"></td>
+                </tr>
+                </table>
+            </fieldset> 
+            <br>
+            <fieldset>
+                <p>Mejor profesor del curso: <input type="text" name="mejor_profesor" placeholder="Oscar"></p>
+                <p>Profesor más simpático: <input type="text" name="profesor_simpatico" placeholder="Diego "></p>
+                <p>Tu tutor es: <input type="text" name="tutor" size="27"></p>
+                <p><div title="rojo=mal, amarillo=regular, verde=bien">Valora a tu tutor: <input type="color" value="#03fc0b"></div></p>
+            </fieldset> 
+            <input type="submit" name="enviar_encuesta">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<figuras>
+    <figura descripcion="plana"> <!--mal tabulado y mal señalado el atributo-->
+        <nombre>cuadrado</nombre><!--mal tabulado-->
+        <lados>4</lados><!--mal tabulado y mal estructurado, debe tener una etiqueta de cierre y el numero entre las etiquetas, ademas la etiqueta de abertura sobre la / -->
+    </figura><!--mal tabulado y -->
+    <figura descripcion="plana"> <!--mal tabulado y mal señalado el atributo-->
+        <nombre>triángulo</nombre>
+        <lados>3</lados><!--mal tabulado y mal estructurado, debe tener una etiqueta de cierre y el numero entre las etiquetas, ademas la etiqueta de abertura sobre la / -->
+    </figura>
+    <figura descripcion="tridimensional"> <!--mal tabulado y mal señalado el atributo-->
+        <nombre>cubo</nombre>
+        <aristas>12</aristas> <!--mal tabulado y mal estructurado, debe tener una etiqueta de cierre y el numero entre las etiquetas, ademas la etiqueta de abertura sobre la / -->
+        <caras>6</caras> <!--mal tabulado y mal estructurado, debe tener una etiqueta de cierre y el numero entre las etiquetas, ademas la etiqueta de abertura sobre la / -->
+    </figura>
+</figuras>

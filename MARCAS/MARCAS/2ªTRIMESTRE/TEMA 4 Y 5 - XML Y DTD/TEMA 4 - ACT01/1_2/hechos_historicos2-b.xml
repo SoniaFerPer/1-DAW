@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="1_2\css\style.css" ?>
+<!--Guardarlo como atributos dentro de la etiqueta-->
+<articulos>
+        <articulo nombre="sofa" precio="642"/></articulo>    
+        <articulo nombre="Mesa" precio="305"></articulo>  
+        <articulo nombre="Lámpara" precio="89"></articulo>> 
+</articulos> 

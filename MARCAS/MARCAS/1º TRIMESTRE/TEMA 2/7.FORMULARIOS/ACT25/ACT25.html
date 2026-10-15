@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Sonia Fernández"/>
+        <title>Actividad 25 Formulario HTML</title>
+        <meta name="description" content="Actividad 25 hacer un formulario ">
+        <meta name="keywords" content="html,ejercicio 25,formularios">
+        <link rel="icon" href="../ACT25/imagenes/s.png" type="png">
+    </head>
+    <body>
+        <form action="mailto:Sferper932@g.educaand.es">
+            <p>Escribe tu nombre:<input type="text" name="nombre" size="40" maxlength="30" value="Sonia"/></p>
+            <p>Escribe tu apellido:<input type="text" name="apellido" size="20" maxlength="50" value="Fernández"/></p>
+            <p>Escribe tu email:<input type="email" name="email" size="30" value="correo@empresa.com" required="required"/></p>
+            <p>¿Qué valoración le das a la publicación?
+                <input type="radio" name="puntuacion" value="0"/>0
+                <input type="radio" name="puntuacion" value="1"/>1
+                <input type="radio" name="puntuacion" value="2"/>2
+                <input type="radio" name="puntuacion" value="3"/>3
+                <input type="radio" name="puntuacion" value="4"/>4
+                <input type="radio" name="puntuacion" value="5" checked="checked"/>5
+            </p>
+            <p>¿Qué asiganturas has estudiado?
+                <input type="checkbox" name="html" value="html" multiple="multiple" />html
+                <input type="checkbox" name="css" value="css" multiple="multiple"/>css
+                <input type="checkbox" name="jsc" value="javasc" multiple="multiple"/>javascript
+            </p>    
+            <p>Selecciona tu color favorito
+                <select name="colorfavorito" size="5">
+                    <option value="color1">Rojo</option>
+                    <option value="color2">Azul</option>
+                    <option value="color3">Amarillo</option>
+                    <option value="color4">Verde</option>
+                    <option value="color5">Naranja</option>
+                </select>
+            </p>
+            <p>¿Qué mejorarías de este curso?    
+                <textarea name="text" rows="3" cols="20" maxlength="300"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="enviardatos" value="Enviar"/> 
+                <input type="reset" name="limpiar" value="Limpiar">
+            </p>
+        </form>
+    </body>
+</html>    

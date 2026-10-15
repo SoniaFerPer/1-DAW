@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- faltaba la interrogacion final-->
+<frutas><!--espacio en la etiqueta-->
+    <fruta><!--espacio en la etiqueta y mal tabulado-->
+        <nombre>cereza</nombre><!--espacio en la etiqueta, mal tabulado, mal escrito el cierre-->
+    </fruta><!--espacio en la etiqueta y mal tabulado, mal escrito el cierre-->
+    <fruta><!--espacio en la etiqueta y mal tabulado-->
+        <nombre>naranja</nombre><!--espacio en la etiqueta, mal tabulado, mal escrito el cierre-->
+    </fruta><!--espacio en la etiqueta y mal tabulado, mal escrito el cierre-->
+</frutas><!--espacio en la etiqueta y mal escrito el cierre-->

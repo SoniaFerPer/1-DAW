@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cartas xmlns:baraja="http://www.ejercicio3-1.com/baraja"
+xmlns:restaurante="http://www.ejercicio3-1.com/restaurante">
+    <carta>
+      <palo>Corazones</palo> 
+      <numero>7</numero>
+    </carta>
+    <restaurante:carta>
+      <restaurante:carnes> 
+        <restaurante:filete_de_ternera precio="12.95"/> 
+        <restaurante:solomillo_a_la_pimienta precio="13.60"/> 
+      </restaurante:carnes> 
+      <restaurante:pescados> 
+        <restaurante:lenguado_al_horno precio="16.20"/> 
+        <restaurante:merluza_en_salsa_verde precio="15.85"/> 
+      </restaurante:pescados>
+    </restaurante:carta>
+</cartas>
+
+

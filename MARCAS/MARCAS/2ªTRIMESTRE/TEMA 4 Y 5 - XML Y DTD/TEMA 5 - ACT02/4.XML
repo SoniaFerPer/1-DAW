@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE lunas [ 
+  <!ELEMENT lunas (luna+)> 
+  <!--añado al elemento raiz lunas en plural la opcion de que pueda añadir varios elementos hijos luna-->
+  <!ELEMENT luna (#PCDATA)>
+  <!ATTLIST luna numero ID #REQUIRED> 
+  <!ATTLIST luna nombre CDATA #REQUIRED> 
+  <!--un elemento no puede contener dos id, cambio a cdata el atributo nombre-->
+  <!ATTLIST luna planeta  CDATA #IMPLIED>
+  <!--añado el tipo de valor al atributo planeta-->
+]>
+<lunas> 
+    <luna numero="N234" nombre="Galatea"/> 
+    <luna numero="N479" nombre="Mimas" 
+    planeta="Saturno"/> 
+    <luna numero="N566" nombre="Diode" 
+    planeta="Saturno"/> 
+    <luna numero="N607" nombre="Miranda" 
+    planeta="Urano"/> 
+</lunas>

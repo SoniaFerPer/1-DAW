@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--la version es en ingles, falta un -g en encodin, hay espacios que sobran y falta la ? al final del cierre-->
+<!--Documento XML con errores de sintaxis--> <!--Sobraba la exclamacion final y el tipo de documento debe estar en la primera linea-->
+<transportes> <!--faltaba la etiqueta raiz-->       
+    <terrestres>
+        <vehiculo>bicicleta</vehiculo> <!--tabulación y cierre de la etiqueta estaba mal, faltaba /-->
+        <vehiculo>coche</vehiculo> <!--tabulación y cierre de la etiqueta estaba mal, faltaba /-->
+        <vehiculo>tractor</vehiculo> <!--tabulación y cierre de la etiqueta estaba mal, faltaba /-->
+    </terrestres> <!-- faltaba el cierre de la etiqueta-->
+    <acuaticos> <!--mal tabulado y dentro de la estructura hija terrestres-->
+        <vehiculo>canoa</vehiculo> <!--tabulación y cierre de la etiqueta estaba mal, faltaba /-->
+    </acuaticos> <!--faltaba la etiqueta de cierre-->    
+    <aereos> <!--mal tabulado y dentro de la estructura hija terrestres-->
+        <vehiculo>avioneta</vehiculo> <!--tabulación y cierre de la etiqueta estaba mal, faltaba /-->
+        <vehiculo>helicóptero</vehiculo> <!--tabulación y cierre de la etiqueta estaba mal, faltaba /-->
+    </aereos> <!--faltaba la etiqueta de cierre-->
+</transportes>

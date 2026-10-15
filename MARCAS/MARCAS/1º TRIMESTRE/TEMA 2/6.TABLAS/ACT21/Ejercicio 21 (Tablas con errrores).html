@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<title>Actividad 21 Tablas con Errores</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Sonia Fernández">
+	<meta name="description" content="Ejercicio de creación de tablas con Errores"><!--faltaba unas comillas dobles-->
+	<style>
+		table{
+			border-collapse:collapse;
+			caption-side: bottom;
+		}
+		caption{
+			font-weight:bold;
+			margin-top:16px;
+		}
+		th,td{padding:5px 10px;}
+		td,th{border:1px solid #1c1c1c;text-align:center;}
+		td{font-weight:normal;}
+	</style>
+</head>
+<body>
+	<table>
+	<tr>
+		<th rowspan="4">Recursos</th>
+		<th colspan="4">Facturación de los últimos tres meses</th>
+		<!--corregir el numero en la combinación de celdas y filas-->
+	</tr>
+	<tr>
+		<td>Discos Duros</td>
+		<td>23000</td>
+		<td>27200</td>
+		<td>26000</td>
+	</tr>
+	<tr>
+		<td>CPU</td>
+		<td>73000</td>
+		<td>67300</td>
+		<td>51000</td>
+	</tr>
+	<tr>
+		<td>Monitores</td>
+		<td>53000</td>
+		<td>72000</td>
+		<td>88000</td>
+	</tr>
+	</table>
+</body>
+</html>

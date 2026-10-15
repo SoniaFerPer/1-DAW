@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE saludos [ 
+<!ELEMENT saludos (saludo*)> 
+<!ELEMENT saludo (#PCDATA)> 
+<!ATTLIST saludo idioma (ALE | FRA | ITA | ESP |POR) "ESP"> 
+<!-- modifique ue los valores del atributo para que reconociera los usados-->
+]>
+<!--He tenido que corregir el DTD porque el valor por defecto "ESP" debe estar entre las opciones del parentesis-->
+<saludos> 
+  <saludo idioma="ALE">Hallo</saludo> 
+  <saludo>Hola</saludo> 
+  <saludo idioma="ITA">Ciao</saludo> 
+  <saludo idioma="FRA">Salut</saludo> 
+  <saludo idioma="POR">Olá</saludo> 
+</saludos>

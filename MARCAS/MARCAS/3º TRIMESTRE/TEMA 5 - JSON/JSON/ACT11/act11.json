@@ -1,0 +1,47 @@
+{
+    "plantaEnvasado":{
+        "contenedorGrande":{
+            "envaseGrandeAncho":[
+                "leche",
+                "agua",
+                "aceite",
+                "vinagre"
+            ]
+        },
+        "contenedorMediano":{
+            "envasePequenio":[
+                "lejia",
+                "alcohol",
+                "Gasolina",
+                "Aguarras",
+                "amoniaco",
+                "jabon"
+            ],
+            "envaseMedianoAncho":[
+                "lejia",
+                "alcohol",
+                "Gasolina",
+                "Aguarras",
+                "amoniaco",
+                "jabon"
+            ]
+        },
+        "contenedorVertical":{
+            "envaseGrandeAlto":[
+               "lejia",
+                "alcohol",
+                "Gasolina",
+                "Aguarras",
+                "amoniaco",
+                "jabon"
+            ],
+            "envaseMedianoAlto":[
+               "leche",
+                "agua",
+                "aceite",
+                "vinagre"
+            ]
+        }
+            
+    }
+}

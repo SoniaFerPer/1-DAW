@@ -1,0 +1,4 @@
+hola java, estoy creando mi primer archivo desde consola :)
+ya rula
+
+fin

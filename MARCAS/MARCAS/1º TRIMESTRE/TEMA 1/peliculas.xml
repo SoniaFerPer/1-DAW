@@ -1,0 +1,30 @@
+<Coleccion_peliculas>
+	<pelicula>
+		<titulo>Con faldas y a lo loco</titulo>
+		<director>Billy Wilder</director>
+		<anio>1959</anio>
+		<duracion>120 minutos</duracion>
+		<pais>EE.UU.</pais>
+	</pelicula>
+	<pelicula>
+		<titulo>The Matrix</titulo>
+		<director>Lana Wachowski</director>
+		<anio>1999</anio>
+		<duracion>131 minutos</duracion>
+		<pais>EE.UU.</pais>
+	</pelicula>
+	<pelicula>
+		<titulo>Avatar</titulo>
+		<director>James Cameron</director>
+		<anio>2009</anio>
+		<duracion>161 minutos</duracion>
+		<pais>EE.UU.</pais>
+	</pelicula>
+	<pelicula>
+		<titulo>Padre no hay mas que uno</titulo>
+		<director>Santiago Segura</director>
+		<anio>2019</anio>
+		<duracion>96 minutos</duracion>
+		<pais>Espania</pais>
+	</pelicula>
+</Coleccion_peliculas>

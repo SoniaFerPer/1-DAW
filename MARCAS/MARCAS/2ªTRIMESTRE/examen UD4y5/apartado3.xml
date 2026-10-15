@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura[
+<!ATTLIST factura numero #REQUIRED>
+<!ATTLIST factura fecha  #REQUIRED>
+<!ELEMENT factura (datosEmisor,DatosCliente,detalleFactura)+>
+<!ELEMENT datosEmisor (nombre,CIF,telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT CIF (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT datosCliente (nombre,CIF,telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT CIF (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT detalleFactura (descripcion,cantidad,oferta?,pvp,importe+)>
+<!ATTLIST codigo-articulo (ID) #REQUIRED>
+<!ATTLIST tipo (Libro | DVD | Varios) #IMPLIED>
+<!ATTLIST detalleFactura importe CDATA #REQUIRED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT oferta EMPTY>
+<!ATTLIST oferta-articulo (SI | NO)>
+<!ELEMENT pvp (#PCDATA)>
+]>
+<factura>
+    <datosEmisor>
+    
+    </datosEmisor>
+    <datosCliente>
+    
+    </datosCliente>
+</factura>
+   

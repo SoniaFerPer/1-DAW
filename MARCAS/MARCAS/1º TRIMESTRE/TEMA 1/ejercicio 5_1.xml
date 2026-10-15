@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<documento> 
+   <p>Mi Primer <destacar importancia="1">Documento XML</destacar></p>
+   <!--le faltaba el signo mayor a la etiqueta párrafo en el cierre-->
+   <p>Comienza con la etiqueta<documento  /> </p> <!--he cerrado la etiqueta documento-->
+   <p>A continuacion colocamos un elemento sin contenido</p>
+    <imagen fichero="imagen.gif"  /> <!--faltaba el cierre bien estructurado de imagen-->
+</documento>
+

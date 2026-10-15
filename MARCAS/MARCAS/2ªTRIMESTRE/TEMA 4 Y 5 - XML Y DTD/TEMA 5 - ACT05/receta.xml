@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE recetas [
+<!ELEMENT recetas (receta+)>
+<!ELEMENT receta (nombre, ingredientes+, instrucciones)>
+    <!ATTLIST receta raciones CDATA #REQUIRED>
+    <!ATTLIST receta dificultad (baja | media | alta) "media">
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ingredientes (#PCDATA)>
+    <!ATTLIST ingredientes cantidad CDATA #IMPLIED>
+    <!ATTLIST ingredientes unidad CDATA #IMPLIED>
+<!ELEMENT instrucciones (#PCDATA)>
+]>
+<recetas>
+  <receta raciones="4">
+      <nombre>Tortilla de Patatas</nombre>
+      <ingredientes cantidad="6">huevo</ingredientes>
+      <ingredientes cantidad="700" unidad="gr">Patatas</ingredientes>
+      <ingredientes cantidad="300" unidad="gr">cebolla</ingredientes>
+      <ingredientes cantidad="30" unidad="gr">sal</ingredientes>
+      <ingredientes cantidad="50" unidad="ml">aceite de oliva</ingredientes>
+      <instrucciones>Comenzamos con la tarea más larga, la de caramelizar la cebolla que nos llevará unos 30 minutos. Para ello, pelamos la cebolla y la cortamos en juliana. Después la ponemos en una sartén a fuego muy lento y dejamos que se haga muy despacio, removiendo de vez en cuando. No nos interesa que se dore la cebolla sino que se vaya pochando muy despacio. 
+      Mientras la cebolla se hace, pelamos las patatas y las cortamos en rodajas finas, procurando que todas ellas sean de tamaño uniforme. Las dejamos en agua durante 15 minutos y ponemos una sartén con aceite de oliva abundante en el fuego. 
+      Sin dar tiempo a que el aceite se caliente, añadimos las patatas y dejamos que se vayan friendo muy despacio, partiendo de un aceite casi en frío. Así conseguimos que las patatas se confiten en lugar de dorarse. De todas formas, cuando lleven unos diez minutos y hayamos removido de vez en cuando, podemos subir el fuego para conseguir que algunas de las patatas queden más tostaditas, originando así contrastes en el plato final.
+      </instrucciones>
+    </receta>
+</recetas>

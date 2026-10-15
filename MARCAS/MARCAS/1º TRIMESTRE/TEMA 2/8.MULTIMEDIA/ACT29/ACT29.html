@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Sonia Fernández"/>
+        <title>Actividad 29 MULTIMEDIA</title>
+        <meta name="description" content="Introducir video dentro de HTML">
+        <meta name="generator" content="VSCode">
+        <meta name="keywords" content="html,ejercicio 29,video">
+        <link rel="icon" href="../ACT29/imagenes/SON.png" type="png">
+    </head>
+    <body>
+        <h1>Ejemplo de la etiqueta video</h1>
+        <video controls loop width="1000px" height="550px">
+            <source src="./multimedia/coverr.mp4" type="video/mp4"/>            
+        </video>
+        <video controls loop width="1000px" height="600px" poster="./imagenes/popeyepresidente.jpg">
+            <source src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4" type="video/mp4"/>            
+        </video>
+        <h2>Para utilizar elementos de video en una web se deben emplear los siguientes atributos</h2>
+        <ul type="disc">
+            <li><font style="background-color: red; color:white;">src:</font> define la URL donde se aloja el contenido de audio.</li>
+            <li><font style="background-color: red; color:white;">type:</font> define el formato del archivo.</li>
+            <li><font style="background-color: red; color:white;">controls:</font> deberá especificarse o NO aparecerá ningún elemento visual para controlar la reproduccion del contenido.</li>
+        </ul>
+        <p>También usaremos los atributos <b>width</b> y <b>height</b> para configurar el tamaño del reproductor del video, pero esto es opcional.</p>
+    
+        <h2>Utilizar varios tipos de video con el elemento source</h2>
+        <video controls loop width="650px" height="500px">
+            <source src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident.ogv" type="video/ogv"/>
+            <source src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4" type="video/mp4"/>
+            <source src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident.mpeg" type="video/mpeg"/>
+        </video>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<agenda>
+	<persona>
+		<nombre>Maria</nombre>
+		<apellidos>Rodriguez Fernández</apellidos>
+		<direccion>C/Canalejas nº3 1ºDerecha</direccion>
+		<localidad>Linares</localidad>
+		<provincia>Jaén</provincia>
+		<email>mariarf@gmail.com</email>
+		<tlfn>645676945</tlfn>
+	</persona>
+	<persona>
+		<nombre>Manolo</nombre>
+		<apellidos>Ronda Segura</apellidos>
+		<direccion>C/rosales nº2 </direccion>
+		<localidad>Pozoblanco</localidad>
+		<provincia>Córdoba</provincia>
+		<email>Man.ronsegura@gmail.com</email>
+		<tlfn>645455445</tlfn>
+	</persona>
+</agenda>
+		

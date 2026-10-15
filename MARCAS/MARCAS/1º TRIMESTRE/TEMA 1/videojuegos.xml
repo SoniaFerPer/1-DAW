@@ -1,0 +1,18 @@
+<videojuegos>
+	<videojuego>
+		<numero>1</numero>
+		<titulo>Call Of Duty</titulo>
+		<plataforma>PlayStation 5</plataforma>
+	</videojuego>
+	<videojuego>
+		<numero>2</numero>
+		<titulo>Fornite</titulo>
+		<plataforma>Xbox One</plataforma>
+	</videojuego>
+	<videojuego>
+		<numero>3</numero>
+		<titulo>Manic Miner</titulo>
+		<plataforma>Amstrad CPC</plataforma>
+	</videojuego>
+</videojuegos>
+	

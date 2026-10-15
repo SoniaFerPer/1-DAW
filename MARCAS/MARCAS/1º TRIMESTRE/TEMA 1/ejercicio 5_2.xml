@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<libros>
+<!--he alineado la etiqueta con el cierre-->
+    <libro id="Quijote">
+    <titulo>El Quijote</titulo> 
+    <autor nombre="Cervantes" /> 
+    <!--he arreglado la etiqueta de cierre-->
+    <descripcion>Es el mejor libro de Cervantes</descripcion>
+     <!--le borré el signo de mayor al contenido-->
+    </libro>
+    <!--le he cambiado el corchete por el signo de mayor -->
+</libros>
+<!--estaba con mayuscula y el principio en minuscula-->

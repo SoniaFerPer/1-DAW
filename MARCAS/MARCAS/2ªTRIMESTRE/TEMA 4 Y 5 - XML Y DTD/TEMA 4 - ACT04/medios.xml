@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<!--no puede haber espacios en las etiquetas-->
+<mediosDeTransporte>
+    <!--no se piuede usar el signo < dentro de las declaraciones-->
+    <bicicleta velocidad="v&lt;100km/h"/> 
+    <!--se puede usar las letras juntas con upperCase-->
+    <patinete velocidadMaxima="50 km/h"/>
+</mediosDeTransporte>
+  

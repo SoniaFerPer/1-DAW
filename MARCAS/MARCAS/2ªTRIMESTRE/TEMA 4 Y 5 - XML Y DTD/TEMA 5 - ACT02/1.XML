@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE declaraciones [ 
+    <!ELEMENT declaraciones (consonante, tipo_de_dato?, variable+)> 
+    <!--modifique la cardinalidad de los elementos para que no diese error-->
+    <!ELEMENT consonante (#PCDATA)> 
+    <!ATTLIST consonante valor CDATA #REQUIRED> 
+    <!ELEMENT tipo_de_dato (#PCDATA)> 
+    <!ELEMENT variable (#PCDATA)*> 
+    <!ATTLIST variable tipo CDATA #IMPLIED> 
+    <!--ya que no tienen tipo las variables las he especificado como opcional-->
+]>
+<declaraciones>
+    <consonante valor="3.141592">PI</consonante> 
+    <variable tipo="real">radio</variable> 
+    <variable>area</variable> 
+    <variable>longitud</variable> 
+</declaraciones>

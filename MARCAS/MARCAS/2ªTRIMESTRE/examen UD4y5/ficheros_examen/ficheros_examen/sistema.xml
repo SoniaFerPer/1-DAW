@@ -1,0 +1,35 @@
+<sistema>
+    <!-- bloque usuario-->
+    <usuario id>
+        <nombre></nombre>
+        <rol-ref idref></rol-ref>
+        <configuracion>
+            <tema></tema>
+            <notificaciones>
+                <email></email>
+                <sms></sms>
+            </notificaciones>
+        </configuracion>
+    </usuario>
+
+    <!-- bloque roles -->
+    <roles>
+        <rol id-rol>
+            <nombre-rol></nombre-rol>
+            <permisos>
+                <permiso></permiso>
+                <noexistepermiso/>               
+            </permisos>
+        </rol>
+    </roles>
+
+    <!-- bloque logs -->    
+    <logs>
+        <log>
+            <usuario-ref idref/>
+            <accion></accion>
+            <fecha></fecha>
+        </log>
+     
+    </logs>
+</sistema>

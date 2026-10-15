@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Sonia Fernández"/>
+        <title>Ejemplo de etiqueta head en formulario</title>
+        <meta name="description" content="Actividad 26 hacer un formulario ">
+        <meta name="keywords" content="html,ejercicio 26,formularios">
+        <meta name="generator" content="VSCode">
+        <link rel="icon" href="../ACT26/imagenes/s.png" type="png">
+    </head>
+    <body style="background-color:#a6cadf">
+        <form action="mailto:Sferper932@g.educaand.es" method="post">
+            <fieldset>
+                <legend>Rellenar</legend>
+                <p><input type="radio" name="idioma" value="idiomaingles">Inglés<br>
+                <input type="radio" name="idioma" value="idiomaaleman">Alemán<br>
+                <input type="radio" name="idioma" value="idiomafrances">Francés</p>
+                <select name="conector" size="1">
+                    <option value="USB" selected="selected">USB</option>
+                    <option value="Paralelo">Paralelo</option>
+                    <option value="PS2">PS2</option>
+                </select>
+                <p>Nombre<input name="username" valor="username" placeholder="Nombre"></p>
+                <p>Apellidos<input name="surname" valor="surname" placeholder="Apellidos"></p>
+            </fieldset>
+            <fieldset>  
+                <legend>Indique sus preferencias por favor</legend>
+                <select name="sexo" size="4">
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>
+                <p><input type="checkbox" name="sexo" value="sexomujer">Mujer</p>
+                <p><input type="checkbox"  name="sexo" value="sexohombre">Hombre</p>
+                <p>Elija una fecha: <input type="date" name="fecha"></p>
+            </fieldset>
+        </form>
+    </body>
+</html>  

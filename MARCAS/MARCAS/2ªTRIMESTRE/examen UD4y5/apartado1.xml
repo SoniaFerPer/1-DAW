@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sistema[
+<!ELEMENT sistema (usuario+,roles+,logs+)>
+<!ELEMENT usuario (nombre,rol-ref,configuracion)>
+<!ATTLIST usuario id CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT rol-ref EMPTY>
+<!ATTLIST rol-ref idref CDATA #REQUIRED>
+<!ELEMENT configuracion (tema,notificaciones) >
+<!ELEMENT tema (#PCDATA) >
+<!ELEMENT notificaciones (email?,sms?)>
+<!ELEMENT email (Activado | Desactivado)>
+<!ELEMENT sms (Activado | Desactivado)>
+<!ELEMENT roles (rol)+>
+<!ELEMENT rol (nombre-rol,permisos*)>
+<!ATTLIST rol id-rol CDATA #REQUIRED>
+<!ELEMENT nombre-rol (#PCDATA)>
+<!ELEMENT permisos (permiso | noexistepermiso)>
+<!ELEMENT permiso (#PCDATA)>
+<!ELEMENT noexistepermiso EMPTY>
+<!ELEMENT logs (log)+>
+<!ELEMENT log (usuario-ref,accion,fecha)>
+<!ELEMENT usuario-ref EMPTY>
+<!ATTLIST usuario-ref idref (IDREF) #REQUIRED>
+<!ELEMENT accion (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+]>
+<sistema>
+   <usuario id="U001">
+        <nombre>Juan Pérez</nombre>
+        <rol-ref idref="R01"></rol-ref>
+        <configuracion>
+            <tema>dark</tema>
+            <notificaciones>
+                <email>Activado</email>
+                <sms>Desactivado</sms>
+            </notificaciones>
+        </configuracion>
+    </usuario>
+    <usuario id="U002">
+      <nombre>Ana Gómez</nombre>
+      <rol-ref idref="R02"></rol-ref>
+      <configuracion>
+          <tema>light</tema>
+          <notificaciones>
+              <email>Activado</email>
+              <sms>Activado</sms>
+          </notificaciones>
+      </configuracion>
+    </usuario>
+
+    <roles>
+        <rol id-rol="R01">
+            <nombre-rol>Administrador</nombre-rol>
+            <permisos>
+                <permiso>Lectura, Escritura, Eliminación</permiso>
+                <noexistepermiso/>
+            </permisos>
+        </rol>
+        <rol id-rol="R02">
+            <nombre-rol>Usuario</nombre-rol>
+            <permisos>
+                <permiso></permiso>
+                <noexistepermiso/>
+            </permisos>
+        </rol>
+        <rol id-rol="R01">
+            <nombre-rol>Administrador</nombre-rol>
+            <permisos>
+                <permiso>Lectura, Escritura, Eliminación</permiso>
+                <noexistepermiso/>
+            </permisos>
+        </rol>
+    </roles>
+    <logs>
+        <log>
+            <usuario-ref idref="U001"/>
+            <accion>Inicio sesión</accion>
+            <fecha>2025-2-14T19:00:00</fecha>
+        </log>
+        <log>
+            <usuario-ref idref="U002"/>
+            <accion>Cambio contraseña</accion>
+            <fecha>2025-2-14T19:30:00</fecha>
+        </log>
+        <log>
+            <usuario-ref idref="U001"/>
+            <accion>Cierre sesión</accion>
+            <fecha>2025-2-14T20:00:00</fecha>
+        </log>
+    </logs>
+</sistema>

@@ -1,0 +1,21 @@
+<Mensaje>
+	<remitente>
+		<nombre>Oscar Aporta</nombre>
+		<email>oa@iesoretania.es</email>
+	</remitente>
+	
+	<destinatario>
+		<nombre>Oscar Aporta</nombre>
+		<email>oa@iesoretania.es</email>
+	</destinatario>
+	<asunto> Hola 
+	</asunto>
+	<texto>
+	<parrafos> 
+		<parrafo1>¿Hola qué tal?</parrafo1>
+		<parrafo2>Hace mucho tiempo que no escribes. A ver si llamas y quedamos pronto.</parrafo2>
+		<parrafo3>Un saludo.</parrafo3>
+	</parrafos>
+	<asunto></asunto>
+	</texto>
+</Mensaje>

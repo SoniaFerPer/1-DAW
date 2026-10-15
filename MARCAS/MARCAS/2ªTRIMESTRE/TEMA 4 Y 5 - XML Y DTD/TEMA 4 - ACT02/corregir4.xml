@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--xml debe estar en minusculas;para la version no sirve las comillas, tiene que ser 1.0, ademas faltaba el guion en la version del encoding-->
+<figuras> <!--faltaba la etiqueta raiz de apertura-->
+    <triangulo base="7" altura="5"/> <!--mal tabulado y falta la barra de cierre, espacio entre atributos-->
+    <triangulo base="2" altura="6"/> <!--mal tabulado y falta la barra de cierre, espacio entre atributos-->
+    <triangulo base="3" altura="3"/> <!--mal tabulado y falta la barra de cierre, espacio entre atributos-->
+</figuras> <!--faltaba la etiqueta raiz de cierre-->

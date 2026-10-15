@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plantaDeEnvasado>
+    <contenedorGrande>
+        <envaseGrandeAncho>
+            <liquido>agua</liquido>
+            <liquido>leche</liquido>
+            <liquido>vinagre</liquido>
+            <liquido>aceite</liquido>
+        </envaseGrandeAncho>
+    </contenedorGrande>
+    <contenedorMediano>
+        <envasePequenio>
+            <liquido>lejia</liquido>
+            <liquido>amoniaco</liquido>
+            <liquido>jabon</liquido>
+            <liquido>aguarrás</liquido>
+            <liquido>gasolina</liquido>
+            <liquido>alcohol</liquido>
+        </envasePequenio>
+        <envaseMedianoAncho>
+            <liquido>agua</liquido>
+            <liquido>leche</liquido>
+            <liquido>vinagre</liquido>
+            <liquido>aceite</liquido>
+        </envaseMedianoAncho>
+    </contenedorMediano>
+    <contenedorVertical>
+        <envaseGrandeAlto>
+            <liquido>lejia</liquido>
+            <liquido>amoniaco</liquido>
+            <liquido>jabon</liquido>
+            <liquido>aguarrás</liquido>
+            <liquido>gasolina</liquido>
+            <liquido>alcohol</liquido>
+        </envaseGrandeAlto>
+        <envaseMedianoAlto>
+            <liquido>agua</liquido>
+            <liquido>leche</liquido>
+            <liquido>vinagre</liquido>
+            <liquido>aceite</liquido>
+        </envaseMedianoAlto>
+    </contenedorVertical>
+</plantaDeEnvasado>

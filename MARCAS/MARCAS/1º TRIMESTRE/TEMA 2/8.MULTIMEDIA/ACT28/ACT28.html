@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Sonia Fernández"/>
+        <title>Actividad 28 MULTIMEDIA</title>
+        <meta name="description" content="Introducir audio dentro de HTML">
+        <meta name="generator" content="VSCode">
+        <meta name="keywords" content="html,ejercicio 28,audio">
+        <link rel="icon" href="../ACT28/imagenes/SON.png" type="png">
+    </head>
+    <body>
+        <h1>Ejemplo de la etiqueta audio</h1>
+        <table>
+        <tr>
+        <audio controls loop>
+            <source src="./multimedia/audio1.mp3" type="audio/mpeg">            
+        </audio>
+        <audio controls loop>
+            <source src="./multimedia/audio2.mp3" type="audio/mpeg">            
+        </audio>
+        </tr>
+        </table>
+        <h2>Para utilizar elementos de audio en una web se deben emplear los siguientes atributos</h2>
+        <ul type="disc">
+            <li><font style="background-color: red; color:white;">src:</font> define la URL donde se aloja el contenido de audio.</li>
+            <li><font style="background-color: red; color:white;">type:</font> define el formato del archivo.</li>
+            <li><font style="background-color: red; color:white;">controls:</font> deberá especificarse o NO aparecerá ningún elemento visual para controlar la reproduccion del contenido.</li>
+        </ul>
+        <p>Esta es una grabacion de una charla llamada <i>Reclaim HTML5</i> que se dio originalmente en Vancouver en unas jornadas <a href="http://www.meetup.com/vancouver-javascript-developers/">'Super VansJS Meetup'</a>. Esta alojado en este <a href="https://archive.org/details/ReclaimHtml5"> Archivo de internet</a> bajo la licencia<a href="http://creativecommons.org/licenses/by/3.0/legalcode"> CC 3.0.</a></p>
+    <h2>Utilizamos el elemento source</h2>
+    <audio controls loop>
+        <source src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.mp3" type="audio/mpeg">
+    </audio>
+    </body>
+</html>

@@ -1,0 +1,236 @@
+ALGORITMO esPrimo
+#definir tipo de datos
+	DEFINIR num Como Entero
+	
+#leer los datos por teclado	
+	ESCRIBIR "Dime un numero: "
+	LEER num
+	
+#proceso, condicion e imprimir resultado	
+	SI num == 2 OR num == 3 OR num == 5 OR num == 7 ENTONCES
+		ESCRIBIR "Es un número primo."
+	SINO SI num MOD 2 == 0 OR num MOD 3 == 0 OR num MOD 5 == 0 OR num MOD 7 == 0 ENTONCES 
+		ESCRIBIR "No es un número primo."
+	SINO
+		ESCRIBIR "Es un número primo."
+	FINSI
+FINALGORITMO
+
+---------------------------------
+ALGORITMO notaAmericana
+#definir tipo de datos
+	DEFINIR nota Como Real
+	DEFINIR calificación Como Caracter
+	
+#leer los datos por teclado	
+	ESCRIBIR ""Dime tu calificación(1-20): "
+	LEER nota
+	
+#proceso, condicion e imprimir resultado	
+
+	SI nota >= 19 AND nota <= 20 ENTONCES
+		calificacion = 'A';
+		ESCRIBIR "Tu calificación es " + calificacion
+		
+	SINO SI nota >= 16 ENTONCES 
+		calificacion = 'B';
+		ESCRIBIR "Tu calificación es " + calificacion
+		
+	SINO SI nota >= 13 ENTONCES 
+		calificacion = 'C';
+		ESCRIBIR "Tu calificación es " + calificacion
+		
+	SINO SI nota >= 10 ENTONCES 
+		calificacion = 'D';
+		ESCRIBIR "Tu calificación es " + calificacion
+		
+	SINO SI nota < 10 AND nota >= 1 ENTONCES 
+		calificacion = 'E';
+		ESCRIBIR "Tu calificación es " + calificacion
+		
+	SINO
+		ESCRIBIR "Nota no válida."
+	FINSI
+FINALGORITMO
+
+------------------------
+ALGORITMO domino
+#definir tipo de datos
+	DEFINIR ex1ficha1,ex2ficha1, ex1ficha2, ex2ficha2 Como Entero
+	
+#leer los datos por teclado	
+	ESCRIBIR "Di el primer extremo de la primera ficha: "
+	LEER ex1ficha1
+	
+	ESCRIBIR "Di el segunda extremo de la primera ficha: "
+	LEER ex1ficha1
+	
+	ESCRIBIR "Di el primer extremo de la segunda ficha: "
+	LEER ex1ficha1
+	
+	ESCRIBIR "Di el segundo extremo de la segunda ficha: "
+	LEER ex1ficha1
+	
+#proceso, condicion e imprimir resultado	
+	SI ex1ficha1 < 1 OR ex1ficha1 > 6 OR ex2ficha1 < 1 OR ex2ficha1 > 6 OR ex1ficha2 < 1 OR ex1ficha2 > 6 OR ex2ficha2 < 1 OR ex2ficha2 > 6 ENTONCES
+		ESCRIBIR "Numero de ficha no válida."
+	SINO SI ex1ficha1 == ex1ficha2 OR ex1ficha1 == ex2ficha OR ex2ficha1 == ex1ficha2 OR ex2ficha1 == ex2ficha2 ENTONCES 
+		ESCRIBIR "Las fichas pueden conectarse."
+	SINO
+		ESCRIBIR "Las fichas no pueden conectarse."
+	FINSI
+FINALGORITMO
+
+---------------------------------------
+ALGORITMO boletin_notas
+#definir tipo de datos
+	DEFINIR resultado Como Cadena
+	DEFINIR nota Como Real
+	
+#leer los datos por teclado
+	ESCRIBIR "Introduce tu nota(0 a 10 con decimales): "
+	LEER nota
+	
+#proceso, condicion e imprimir resultado
+	SI nota < 2 ENTONCES
+        resultado = "Deficiente"
+        ESCRIBIR "Tu resultado en tu calificación es " + resultado
+    SINO SI nota < 5 ENTONCES
+        resultado = "Insuficiente"
+        ESCRIBIR "Tu resultado en tu calificación es " + resultado
+    SINO SI nota < 6 ENTONCES
+        resultado = "Suficiente"
+        ESCRIBIR "Tu resultado en tu calificación es " + resultado
+    SINO SI nota < 7 ENTONCES
+        resultado = "Bien"
+        ESCRIBIR "Tu resultado en tu calificación es " + resultado
+    SINO SI nota < 9 ENTONCES
+        resultado = "Notable"
+        ESCRIBIR "Tu resultado en tu calificación es " + resultado
+    SINO SI nota >= 9 AND nota <= 10 ENTONCES
+        resultado = "Sobresaliente"
+        ESCRIBIR "Tu resultado en tu calificación es " + resultado
+    SINO
+        ESCRIBIR "La nota es incorrecta."
+	FINSI
+	
+FINALGORITMO	
+--------------------------------------
+ALGORITMO triangulo
+#definir tipo de datos
+	DEFINIR grado1, grado2, grado3 Como Entero
+
+#leer los datos por teclado
+	ESCRIBIR "Introduce el primer ángulo del triangulo: "
+	LEER grado1
+	ESCRIBIR "Introduce el segundo ángulo del triangulo: "
+	LEER grado2
+	ESCRIBIR "Introduce el tercer ángulo del triangulo: "
+	LEER grado3
+	
+#proceso, condicion e imprimir resultado
+	SI grado1 + grado2 + grado3 > 180 ENTONCES
+        ESCRIBIR "No puede ser un triangulo."
+    SINO SI grado1 < 90 AND grado2 < 90 AND grado3 < 90 ENTONCES
+        ESCRIBIR "El triangulo es acutángulo."
+    SINO SI (grado1 == 90 OR grado2 == 90 OR grado3 == 90) AND (grado1 + grado2 == 90 OR grado1 + grado3 == 90 OR grado2 + grado3 == 90 ENTONCES
+        ESCRIBIR "El triangulo es rectángulo."
+    SINO SI grado1 > 90 OR grado2 > 90 OR grado3 > 90 ENTONCES
+        ESCRIBIR ""El triangulo es obtusángulo." 
+	FINSI
+FINALGORITMO	
+
+---------------------------------------
+FUNCION valor = valor (numero)
+#definir tipo de datos
+	DEFINIR numero Como Entero
+	
+#Proceso con switch
+	SEGUN numero
+        case 1:
+            valor = 1.0
+        case 2:
+            valor = 2.0
+        case 3:
+            valor = 3.0
+        case 4:
+            valor = 4.0
+        case 5:
+            valor = 5.0
+        case 6:
+            valor = 6.0
+        case 7:
+            valor = 7.0
+        case 10:
+        case 11:
+        case 12:
+            valor = 0.5
+        default:
+            valor =  0	
+	FINSEGUN
+FINFUNCION	
+
+FUNCION resultado = resultado (card1,card2,card3)
+#definir tipo de datos
+	DEFINIR card1, card2, card3 Como Real
+	resultado = card1 + card2 + card3
+FINFUNCION	
+
+ALGORITMO sieteYmedia
+#definir tipo de datos
+	DEFINIR card1,card2,card3 Como Real
+	
+	#leer los datos por teclado
+	ESCRIBIR "¡Vamos a jugar a las siete y media. Tienes que introducir el valor de tres cartas."
+	
+	ESCRIBIR "Introduzca el valor de la primera carta: "
+	LEER card1   //card1 = valor((int) sc.nextDouble());//
+	
+	ESCRIBIR "Introduzca el valor de la segunda carta: "
+	LEER card2   //card2 = valor((int) sc.nextDouble());//
+	
+	ESCRIBIR "Introduzca el valor de la tercera carta: "
+	LEER card3   //card3 = valor((int) sc.nextDouble());//
+	
+	#proceso, condicion e imprimir resultado
+    SI resultado(card1,card2,card3) == 7.5 ENTONCES
+        ESCRIBIR "Ganas la partida."
+    SINO SI resultado(card1,card2,card3 < 7.5 ENTONCES
+        ESCRIBIR "Te has quedado corto."
+    SINO
+        ESCRIBIR "Has perdido porque te has pasado."
+    FINSI
+FINALGORITMO    
+
+---------------------------------------------------------
+ALGORITMO ecuacionSegundoGrado
+#definir tipo de datos
+	DEFINIR resultado1, resultado2, a, b, c, discriminante Como Real
+
+#leer los datos por teclado
+	ESCRIBIR "valor de a: "
+	LEER a
+	ESCRIBIR "valor de b: "
+	LEER b
+	ESCRIBIR "valor de c: "
+	LEER c
+
+#proceso, condicion e imprimir resultado
+	discriminante = Math.pow(b,2) - 4 * a * c
+
+	SI discriminante>0 ENTONCES
+        ESCRIBIR "La ecuación tiene dos soluciones distintas: "
+		resultado1 = (-b + Math.sqrt(discriminante)) / (2 * a)
+        resultado2 = (-b - Math.sqrt(discriminante)) / (2 * a)
+		ESCRIBIR "Primer resultado: " + resultado1
+		ESCRIBIR "Segundo resultado: " + resultado2
+    SINO SI discriminante == 0 ENTONCES
+		resultado1 = -b / (2 * a);
+        ESCRIBIR "La ecuación tiene una única solución (raíz doble): " + resultado1
+    SINO
+        ESCRIBIR "No existe una solución real."
+    
+	FINSI
+FINALGORITMO
+
+------------------------------------------------------------

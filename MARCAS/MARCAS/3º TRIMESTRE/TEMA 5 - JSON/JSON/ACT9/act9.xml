@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<empleados>
+    <empleado>
+        <datos-personales>
+            <nombre>Rosa</nombre>
+            <apellido>Ramirez</apellido>
+            <fecha_de_nacimiento>23-11-2020</fecha_de_nacimiento>
+        </datos-personales>
+        <detalles-laborales>
+            <numero>2423543</numero>
+            <puesto>Administrativo</puesto>
+            <departamento>Gestión</departamento>
+        </detalles-laborales>
+    </empleado>
+</empleados>
+<empleados>
+    <empleado>
+        <datos-personales>
+            <nombre>Ramiro</nombre>
+            <apellido>Gomez</apellido>
+            <fecha_de_nacimiento>23-11-2010</fecha_de_nacimiento>
+        </datos-personales>
+        <detalles-laborales>
+            <numero>2456573</numero>
+            <puesto>Informatico</puesto>
+            <departamento>IT</departamento>
+        </detalles-laborales>
+    </empleado>
+</empleados>

@@ -1,0 +1,26 @@
+{
+	"productos": {
+		"producto": [
+			{
+				"código":234567,
+				"nombre": "Camiseta",
+				"precio": "19.99",
+				"categoria":"ropa",
+				"detalles": {
+					"fecha": "22-11-2020",
+					"stock": "true"
+				}
+			},
+			{
+				"código":257688,
+				"nombre": "Pantalón",
+				"precio": "29.99",
+				"categoria":"ropa",
+				"detalles": {
+					"fecha": "12-01-2021",
+					"stock": "false"
+				}
+			}
+		]
+	}
+}

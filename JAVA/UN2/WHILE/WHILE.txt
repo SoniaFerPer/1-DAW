@@ -1,0 +1,159 @@
+ALGORITMO multiploTres
+	#Definir tipo de datos
+		DEFINIR num, contador,resultado Como Entero
+
+	#declarar variables
+	num = 3
+	contador = 1
+	
+	#proceso, bucles
+	MIENTRAS contador <= 10 
+		resultado = num * contador
+		contador++
+
+	#salida de datos
+		ESCRIBIR "resultado + " - "
+	FINMIENTRAS
+	
+FINALGORITMO
+-----------------
+ALGORITMO cienEuros
+	#Definir tipo de datos
+		DEFINIR pago, pago2, devolución
+		
+	#leer datos por teclado
+		ESCRIBIR "¿cuanto vas a pagar?: "
+		LEER pago
+		
+	#proceso, bucles
+	MIENTRAS pago < 100 
+		ESCRIBIR "Todavia falta:  "
+		LEER pago2
+		pago += pago2
+		
+		SI pago > 100 ENTONCES
+			devolución = pago - 100
+		FINSI
+		
+	#salida de datos
+		ESCRIBIR "Tengo que devolverte " + devolucion + " euros."
+	FINMIENTRAS
+	
+FINALGORITMO
+---------------------------
+ALGORITMO contadoPares
+#Definir tipo de datos
+		DEFINIR num, contadorPar Como Entero
+		
+	#leer datos por teclado
+		ESCRIBIR "Escriba un numero: "
+		LEER num
+	
+	#Declarar variables
+		contadorPar = 0
+		
+	#proceso, bucles
+	MIENTRAS num >= 0 
+		ESCRIBIR "Escriba otro numero: "
+		LEER num
+	
+		SI num MOD 2 == 0 AND num > 0 ENTONCES
+			contadorPar++
+		FINSI
+		
+	#salida de datos
+		ESCRIBIR "Hay " + contadorPar + " numeros pares"
+	FINMIENTRAS
+	
+FINALGORITMO
+---------------------------------------
+FUNCION monedaLegal = monedaLegal()
+	#Definir tipo de datos
+		DEFINIR moneda Como Real
+		DEFINIR valido Como Booleano
+	
+	#Declarar variables
+		valido = false
+		moneda = 0.0
+		
+	#proceso, bucles
+		MIENTRAS num >= 0 
+			ESCRIBIR "Ingrese billete o moneda: "
+			LEER moneda
+		
+			SI moneda == 500 OR moneda == 200 OR moneda == 100 OR moneda == 50
+            OR moneda == 20 OR moneda == 10 OR moneda == 5 OR moneda == 2
+            OR moneda == 1 OR moneda == 0.50 OR moneda == 0.20 OR moneda == 0.10
+            OR moneda == 0.05 OR moneda == 0.02 OR moneda == 0.01 ENTONCES
+				
+				valido = true
+				
+			SINO
+				ESCRIBIR "No es un billete o moneda válida."
+			FINSI
+		FINMIENTRAS
+FINFUNCION	
+
+ALGORITMO monedaCursoLegal
+	#Definir tipo de datos
+		DEFINIR resultado Como Real
+	
+	#Declarar variables
+		resultado = monedaLegal()
+		
+	#salida de datos
+		ESCRIBIR resultado + " es una moneda válida."
+	
+FINALGORITMO
+--------------------------------------------
+FUNCION monedaLegal = monedaLegal()
+	#Definir tipo de datos
+		DEFINIR moneda Como Real
+		DEFINIR valido Como Booleano
+	
+	#Declarar variables
+		valido = false
+		moneda = 0.0
+		
+	#proceso, bucles
+		MIENTRAS num >= 0 
+			LEER moneda
+		
+			SI moneda == 500 OR moneda == 200 OR moneda == 100 OR moneda == 50
+            OR moneda == 20 OR moneda == 10 OR moneda == 5 OR moneda == 2
+            OR moneda == 1 OR moneda == 0.50 OR moneda == 0.20 OR moneda == 0.10
+            OR moneda == 0.05 OR moneda == 0.02 OR moneda == 0.01 ENTONCES
+				
+				valido = true
+				
+			SINO
+				ESCRIBIR "No es un billete o moneda válida."
+			FINSI
+		FINMIENTRAS
+FINFUNCION	
+
+ALGORITMO cienEurosLegal
+	#Definir tipo de datos
+		DEFINIR restante, dinero Como Real
+		
+	#Declarar variables
+		restante = 100.0
+	
+	MIENTRAS restante > 0 
+	#Leer datos por teclado
+		ESCRIBIR "¿cuanto me das?: "
+	
+	#Declarar variables
+		dinero = monedaLegal()
+		restante -= dinero
+		
+		SI restante < 0 ENTONCES
+			ESCRIBIR "Aún quedan " + restante
+		FINSI
+	FINMIENTRAS
+		
+	#salida de datos
+		ESCRIBIR "Es suficiente."
+		ESCRIBIR ""El cambio es " + restante
+	
+FINALGORITMO

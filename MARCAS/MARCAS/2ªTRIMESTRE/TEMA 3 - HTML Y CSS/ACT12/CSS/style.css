@@ -1,0 +1,97 @@
+/*todo el documento*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+    background-color: #EDDCC1;
+}
+
+/*cabecera*/
+header {
+    background-color: #FFF;
+    padding: 1em;
+   
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-family: 'Courier New', 'Courier', 'monospace';
+    font-size: 2em;
+    word-spacing: -5px;
+}
+
+h1 > span {
+    color: #328532;
+    font-size: 0.9em;
+}
+
+/*lista cabecera*/
+
+nav ul {
+    color: #000;
+    padding: 1em;
+    display: flex;
+    place-content: inherit;
+}
+nav ul li {
+    padding: 1em;
+    list-style-type: none;
+}
+
+.boton{
+    background-color: #328532;
+    color: #FFF;
+    border:1px;
+    border-radius: 30%;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.5em 1.1em;
+    place-content:inherit;
+}
+.boton:hover{
+    background-color: #FFF;
+    color: #328532;
+}
+
+/*enlace*/
+a.link {
+    font-weight: bold;
+}
+
+/*main*/
+h2 {
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: #616161;
+}
+section{
+    text-align: center;
+
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+article>div {
+    background-color: #328532;
+    padding: 10px;
+    color: #FFF;
+    text-align: center;
+    padding: 1em;
+}
+
+/*pie de pagina*/
+footer {
+    background-color: #1c221c;
+    color: #FFF;
+    padding: 1em;
+}

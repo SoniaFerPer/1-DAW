@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LibreriaElectronica>
+    <libreria1><negrita>Entre Libros</negrita>
+      <libro1>
+        <caracteristica nombre="ISBN">978-84-415-2425-5</caracteristica>
+        <caracteristica nombre="Titulo">Indesing con XML para Diseñadores</caracteristica>
+        <caracteristica nombre="Nivel">Intermedio</caracteristica>
+        <caracteristica nombre="Paginas">320</caracteristica>
+        <caracteristica nombre="Autor">Maivald, James J.</caracteristica>
+        <caracteristica nombre="Editorial">ANAYA MULTIMEDIA</caracteristica>
+        <caracteristica nombre="Fecha_publicacion">2008</caracteristica>
+        <caracteristica nombre="Url">https://www.entre-libros.com/libro/indesign-con-xml-para-disenadores_282081</caracteristica>
+        <!--no se como añadir hipervinculos para que rediriga directamente a la página web-->
+        <caracteristica nombre="Precio">26,30€</caracteristica>
+      </libro1>
+      <libro2>
+        <caracteristica nombre="ISBN">978-84-205-4245-4</caracteristica>
+        <caracteristica nombre="Titulo">curso XML de Introduccion al Lenguaje de la Web</caracteristica>
+        <caracteristica nombre="Nivel">Básico</caracteristica>
+        <caracteristica nombre="Paginas">192</caracteristica>
+        <caracteristica nombre="Autor">Martin, Martin Benitez</caracteristica>
+        <caracteristica nombre="Editorial">PRENTICE HALL</caracteristica>
+        <caracteristica nombre="Fecha_publicacion">2005</caracteristica>
+        <caracteristica nombre="Url">https://www.entre-libros.com/libro/curso-de-xml-introduccion-al-lenguaje-de-la-web_283429</caracteristica>
+        <caracteristica nombre="Precio">29,90€</caracteristica>
+      </libro2>
+      <libro3>
+        <caracteristica nombre="ISBN">978-970-10-3672-3</caracteristica>
+        <caracteristica nombre="Titulo">Programación Avanzada con XML</caracteristica>
+        <caracteristica nombre="Nivel">Avanzado</caracteristica>
+        <caracteristica nombre="Paginas">748</caracteristica>
+        <caracteristica nombre="Autor">Arciniegas, Fabio</caracteristica>
+        <caracteristica nombre="Editorial">MCGRAW-HILL S.A.</caracteristica>
+        <caracteristica nombre="Fecha_publicacion">2002</caracteristica>
+        <caracteristica nombre="Url">https://www.entre-libros.com/libro/programacion-avanzada-con-xml_281361</caracteristica>
+        <caracteristica nombre="Precio">65,95€</caracteristica>
+      </libro3>
+    </libreria1>
+    <libreria2><negrita>Casa del Libro</negrita>
+      <libro1>
+        <caracteristica nombre="ISBN">978-84-415-1576-5</caracteristica>
+        <caracteristica nombre="Titulo">XML (Manuales Imprescindibles)</caracteristica>
+        <caracteristica nombre="Nivel">Básico</caracteristica>
+        <caracteristica nombre="Paginas">352</caracteristica>
+        <caracteristica nombre="Autor">Gutierrez, Juan Diego</caracteristica>
+        <caracteristica nombre="Editorial">ANAYA MULTIMEDIA</caracteristica>
+        <caracteristica nombre="Fecha_publicacion">2005</caracteristica>
+        <caracteristica nombre="Url">https://www.casadellibro.com/libro-xml-manuales-imprescindibles/9788441515765/1022265</caracteristica>
+        <caracteristica nombre="Precio">19,60€</caracteristica>
+      </libro1>
+      <libro2>
+        <caracteristica nombre="ISBN">978-84-415-1363-1</caracteristica>
+        <caracteristica nombre="Titulo">Servicios Web XML: Profesional</caracteristica>
+        <caracteristica nombre="Nivel">Avanzado</caracteristica>
+        <caracteristica nombre="Paginas">800</caracteristica>
+        <caracteristica nombre="Autor">Cauldwell, Patrick</caracteristica>
+        <caracteristica nombre="Editorial">ANAYA MULTIMEDIA</caracteristica>
+        <caracteristica nombre="Fecha_publicacion">2002</caracteristica>
+        <caracteristica nombre="Url">https://www.casadellibro.com/libro-servicios-web-xml-profesional/9788441513631/835845</caracteristica>
+        <caracteristica nombre="Precio">59,99€</caracteristica>
+      </libro2>
+      <libro3>
+        <caracteristica nombre="ISBN">978-84-789-7482-5</caracteristica>
+        <caracteristica nombre="Titulo">XML:Navegar en Internet</caracteristica>
+        <caracteristica nombre="Nivel">Básico</caracteristica>
+        <caracteristica nombre="Paginas">200</caracteristica>
+        <caracteristica nombre="Autor">Vazquez, Adolfo</caracteristica>
+        <caracteristica nombre="Editorial">RA-MA</caracteristica>
+        <caracteristica nombre="Fecha_publicacion">2001</caracteristica>
+        <caracteristica nombre="Url">https://www.casadellibro.com/libro-xml-navegar-en-internet/9788478974825/790422</caracteristica>
+        <caracteristica nombre="Precio">12,56€</caracteristica>
+      </libro3>
+    </libreria2>
+    <libreria3><negrita>Tecno-Libro</negrita>
+      <libro1>
+        <caracteristica nombre="ISBN">978-84-415-2592-4</caracteristica>
+        <caracteristica nombre="Titulo">Programación Desarrollo de Aplicaciones Web Dinámicas con XML y Java..</caracteristica>
+        <caracteristica nombre="Nivel">Intermedio</caracteristica>
+        <caracteristica nombre="Paginas">736</caracteristica>
+        <caracteristica nombre="Autor">Parsons, David</caracteristica>
+        <caracteristica nombre="Editorial">ANAYA MULTIMEDIA</caracteristica>
+        <caracteristica nombre="Fecha_publicacion">2009</caracteristica>
+        <caracteristica nombre="Url">http://www.tecno-libro.es/libros/programacion-desarrollo-de-aplicaciones-web-dinamicas-con-xml-y-java-incluye-cd-rom-_3429</caracteristica>
+        <caracteristica nombre="Precio">61,00€</caracteristica>
+      </libro1>
+      <libro2>
+        <caracteristica nombre="ISBN">978-2-7460-9736-0</caracteristica>
+        <caracteristica nombre="Titulo">XML Práctico: Bases esenciales. Conceptos y casos prácticos.</caracteristica>
+        <caracteristica nombre="Nivel">Básico</caracteristica>
+        <caracteristica nombre="Paginas">379</caracteristica>
+        <caracteristica nombre="Autor">Boulanger, Thierry</caracteristica>
+        <caracteristica nombre="Editorial">EDICIONES ENI</caracteristica>
+        <caracteristica nombre="Fecha_publicacion">2015</caracteristica>
+        <caracteristica nombre="Url">http://www.tecno-libro.es/libros/xml-practico-bases-esenciales-conceptos-y-casos-practicos_90451</caracteristica>
+        <caracteristica nombre="Precio">29,90€</caracteristica>
+      </libro2>
+      <libro3>
+        <caracteristica nombre="ISBN">978-84-96097-45-2</caracteristica>
+        <caracteristica nombre="Titulo">XML.Curso de Iniciación</caracteristica>
+        <caracteristica nombre="Nivel">Básico</caracteristica>
+        <caracteristica nombre="Paginas">656</caracteristica>
+        <caracteristica nombre="Autor">Hunter, David</caracteristica>
+        <caracteristica nombre="Editorial">INFORBOOK'S</caracteristica>
+        <caracteristica nombre="Fecha_publicacion">2005</caracteristica>
+        <caracteristica nombre="Url">http://www.tecno-libro.es/libros/xml-curso-de-iniciacion_67435</caracteristica>
+        <caracteristica nombre="Precio">32,50€</caracteristica>
+      </libro3>
+    </libreria3>
+  </LibreriaElectronica>

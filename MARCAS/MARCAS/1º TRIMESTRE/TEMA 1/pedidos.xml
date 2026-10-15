@@ -1,0 +1,6 @@
+<Pedido>
+	<destinatario>Juan Delgado Martinez</destinatario>
+	<articulo>bicicleta A2023</articulo>
+	<direccion_entrega>Calle Barco 4, 3ºA </direccion_entrega>
+	<fecha_de_entrega>19-5-2000</fecha_de_entrega>
+</Pedido>
